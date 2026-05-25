@@ -1,0 +1,26 @@
+version: 1
+generated_at: 2026-05-25T13:06:37Z
+internal: []
+trusted:
+  - action: actions/checkout
+    refs:
+      - v2
+    occurrences:
+      v2:
+        .github/workflows/python-package.yml:
+          - jobs.build.steps.[0].uses
+        .github/workflows/test.yml:
+          - jobs.test.steps.[0].uses
+  - action: actions/setup-python
+    refs:
+      - v2
+    occurrences:
+      v2:
+        .github/workflows/python-package.yml:
+          - jobs.build.steps.[1].uses
+        .github/workflows/test.yml:
+          - jobs.test.steps.[1].uses
+external: []
+local: []
+docker: []
+dynamic: []
