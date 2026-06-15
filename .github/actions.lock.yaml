@@ -1,21 +1,21 @@
 version: 1
-generated_at: 2026-06-11T15:38:10Z
+generated_at: 2026-06-15T13:14:54Z
 internal: []
 trusted:
   - action: actions/checkout
     refs:
-      - v2
+      - ee0669bd1cc54295c223e0bb666b733df41de1c5
     occurrences:
-      v2:
+      ee0669bd1cc54295c223e0bb666b733df41de1c5:
         .github/workflows/python-package.yml:
           - jobs.build.steps.[0].uses
         .github/workflows/test.yml:
           - jobs.test.steps.[0].uses
   - action: actions/setup-python
     refs:
-      - v2
+      - e9aba2c848f5ebd159c070c61ea2c4e2b122355e
     occurrences:
-      v2:
+      e9aba2c848f5ebd159c070c61ea2c4e2b122355e:
         .github/workflows/python-package.yml:
           - jobs.build.steps.[1].uses
         .github/workflows/test.yml:
