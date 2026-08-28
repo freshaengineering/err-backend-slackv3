@@ -45,7 +45,7 @@ jobs:
         pip install \
           pytest \
           tox \
-          errbot
+          "errbot<6.2.0"
         errbot --init
         cp tests/config-ci.py config.py
 
